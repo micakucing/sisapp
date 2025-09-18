@@ -1,0 +1,188 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/exam/[id]",
+      "regex": "^/admin/exam/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/exam/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/students/edit/[id]",
+      "regex": "^/admin/students/edit/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/students/edit/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/task/[id]",
+      "regex": "^/admin/task/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/admin/task/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/students/task/[id]",
+      "regex": "^/students/task/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/students/task/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/admin/attendance",
+      "regex": "^/admin/attendance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/attendance(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin/exams",
+      "regex": "^/admin/exams(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/exams(?:/)?$"
+    },
+    {
+      "page": "/admin/results",
+      "regex": "^/admin/results(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/results(?:/)?$"
+    },
+    {
+      "page": "/admin/students/create",
+      "regex": "^/admin/students/create(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/students/create(?:/)?$"
+    },
+    {
+      "page": "/admin/students/siswa",
+      "regex": "^/admin/students/siswa(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/students/siswa(?:/)?$"
+    },
+    {
+      "page": "/admin/tasks",
+      "regex": "^/admin/tasks(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/tasks(?:/)?$"
+    },
+    {
+      "page": "/admin/users",
+      "regex": "^/admin/users(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/users(?:/)?$"
+    },
+    {
+      "page": "/attendance/rekap",
+      "regex": "^/attendance/rekap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/attendance/rekap(?:/)?$"
+    },
+    {
+      "page": "/attendance/rekap-bulanan",
+      "regex": "^/attendance/rekap\\-bulanan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/attendance/rekap\\-bulanan(?:/)?$"
+    },
+    {
+      "page": "/attendance/scan",
+      "regex": "^/attendance/scan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/attendance/scan(?:/)?$"
+    },
+    {
+      "page": "/classes",
+      "regex": "^/classes(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/classes(?:/)?$"
+    },
+    {
+      "page": "/exams",
+      "regex": "^/exams(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/exams(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/public-scan",
+      "regex": "^/public\\-scan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/public\\-scan(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
+      "page": "/settings/attendance",
+      "regex": "^/settings/attendance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/settings/attendance(?:/)?$"
+    },
+    {
+      "page": "/students/dashboard",
+      "regex": "^/students/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/students/dashboard(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
